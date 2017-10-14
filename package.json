@@ -1,6 +1,6 @@
 {
   "name": "ape-cricket",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a live cricket api provides data using crickapi.com",
   "main": "server.js",
   "scripts": {
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/KarthikGangadhar/ape-cricket#readme",
   "dependencies": {
-     "request": "latest"
+    "request": "latest"
   },
   "engines": {
     "node": "6.9.2",

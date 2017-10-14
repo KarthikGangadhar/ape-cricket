@@ -26,7 +26,7 @@ exports.upcomingMatches = function (callback) {
 
 exports.cricketScore = function (unique_id, callback) {
     httpRequest.post({
-        url: "http://apecricket.herokuapp.com:80/api/cricketScore/",
+        url: "http://apecricket.herokuapp.com:80/api/cricketScore",
         form: { unique_id: unique_id }
     }, function (err, resp, body) {
         callback(body);
@@ -35,7 +35,7 @@ exports.cricketScore = function (unique_id, callback) {
 
 exports.playerStats = function (pid, callback) {
     httpRequest.post({
-        url: "http://apecricket.herokuapp.com:80/api/playerStats/",
+        url: "http://apecricket.herokuapp.com:80/api/playerStats",
         form: { pid: pid }
     }, function (err, resp, body) {
         callback(body);
