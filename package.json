@@ -1,0 +1,27 @@
+{
+  "name": "ape-cricket",
+  "version": "1.0.0",
+  "description": "This is a live cricket api provides data using crickapi.com",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KarthikGangadhar/ape-cricket.git"
+  },
+  "author": "kgangadhar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarthikGangadhar/ape-cricket/issues"
+  },
+  "homepage": "https://github.com/KarthikGangadhar/ape-cricket#readme",
+  "dependencies": {
+     "request": "latest"
+  },
+  "engines": {
+    "node": "6.9.2",
+    "npm": "3.10.9"
+  }
+}
