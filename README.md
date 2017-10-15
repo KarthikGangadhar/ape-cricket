@@ -1,4 +1,4 @@
-# ape-cricket v1.0.0
+# ape-cricket v1.1.0
 
 [Site](http://apecricket.herokuapp.com/documentation#)
 
