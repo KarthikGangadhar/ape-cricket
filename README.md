@@ -30,7 +30,7 @@ apecricket.schedule( function(response){
 The endpoints cricketScore() and playerStats() require a string input field "unique_id" and "pid"(player_id). "unique_id" for each match is available from the cricket() endpoint response. and for "pid"(player_id) need to visit [cricapi players page](http://www.cricapi.com/players/). usage is as follows:
 
 
-** cricketScore **
+cricketScore
  ```js
 // Load the full build. 
 var apecricket = require("ape-cricket");
@@ -40,7 +40,7 @@ apecricket.cricketScore( unique_id , function(response){
 });
 ``` 
 
-** playerStats **
+playerStats
  ```js
 // Load the full build. 
 var apecricket = require("ape-cricket");
