@@ -2,7 +2,7 @@
 
 [Site](http://apecricket.herokuapp.com/documentation#)
 
-The [ape-cricket](http://apecricket.herokuapp.com/documentation#) is a rest-api exported as [] Node.js module.
+The [ape-cricket](http://apecricket.herokuapp.com/documentation#) is a rest-api exported as Node.js module.
 
 ## Description
 
