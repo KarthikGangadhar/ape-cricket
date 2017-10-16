@@ -21,7 +21,7 @@ The ape-cricket internally uses [cricapi](http://www.cricapi.com/), Free to use,
 Installation is done using the npm install command:
 ```js
 $ npm install ape-cricket
-```js
+```
 
 #### In Node.js:
 ```js
@@ -54,7 +54,9 @@ apecricket.cricketScore( api_key, unique_id , function(response){
  ```js
 // Load the full build. 
 var apecricket = require("ape-cricket");
+//user api_key
 var api_key = "TESTKEY0273"
+// player id
 var pid = 35320;
 // calling a endpoint to get response.
 apecricket.playerStats( api_key, pid , function(response){ 
