@@ -11,7 +11,15 @@
     "type": "git",
     "url": "https://github.com/KarthikGangadhar/ape-cricket.git"
   },
-  "author": "kgangadhar",
+  "keywords": [
+    "node.js",
+    "cricket",
+    "schedule",
+    "playerstat",
+    "score",
+    "match",
+  ],
+  "author": "kgangadhar <karthikg1643@gmail.com> (https://github.com/karthikgangadhar)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/KarthikGangadhar/ape-cricket/issues"
