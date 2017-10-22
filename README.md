@@ -1,6 +1,6 @@
-# ape-cricket v1.1.0
+# ape-cricket
 
-[Site](http://apecricket.herokuapp.com/documentation#)
+[![npm version](https://badge.fury.io/js/ape-cricket.svg)](http://apecricket.herokuapp.com/documentation#)
 
 The [ape-cricket](http://apecricket.herokuapp.com/documentation#) is a rest-api exported as Node.js module.
 
