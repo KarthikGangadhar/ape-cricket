@@ -24,13 +24,38 @@ $ npm install ape-cricket
 ```
 
 #### In Node.js:
+
 ```js
 // Load the full build. 
 var apecricket = require("ape-cricket");
+```
+
+#### schedule
+```js
 //user api_key
 var api_key = "TESTKEY0273"
 // calling a endpoint to get response.
 apecricket.schedule( api_key, function(response){ 
+    // response will be json data of upcoming cricket matches
+});
+```
+
+#### cricket
+```js
+//user api_key
+var api_key = "TESTKEY0273"
+// calling a endpoint to get response.
+apecricket.cricket( api_key, function(response){ 
+    // response will be json data of upcoming cricket matches
+});
+```
+
+#### upcomingMatches
+```js
+//user api_key
+var api_key = "TESTKEY0273"
+// calling a endpoint to get response.
+apecricket.upcomingMatches( api_key, function(response){ 
     // response will be json data of upcoming cricket matches
 });
 ```
@@ -40,8 +65,6 @@ The endpoints cricketScore() and playerStats() require a string input field "uni
 
 #### cricketScore
  ```js
-// Load the full build. 
-var apecricket = require("ape-cricket");
 //user api_key
 var api_key = "TESTKEY0273"
 // calling a endpoint to get response.
@@ -52,8 +75,6 @@ apecricket.cricketScore( api_key, unique_id , function(response){
 
 #### playerStats
  ```js
-// Load the full build. 
-var apecricket = require("ape-cricket");
 //user api_key
 var api_key = "TESTKEY0273"
 // player id

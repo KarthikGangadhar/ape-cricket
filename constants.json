@@ -1,0 +1,10 @@
+{
+        "endpoints": {
+                "BASE_URL": "http://apecricket.herokuapp.com:80/api",
+                "PLAYERSTATS": "/playerStats?",
+                "CRICKETSCORE": "/cricketScore?",
+                "MATCHES": "/matches?",
+                "CRICKET": "/cricket?",
+                "MATCHCALENDER": "/matchCalendar?"
+        }
+}

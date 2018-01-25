@@ -17,7 +17,7 @@
     "schedule",
     "playerstat",
     "score",
-    "match",
+    "match"
   ],
   "author": "kgangadhar <karthikg1643@gmail.com> (https://github.com/karthikgangadhar)",
   "license": "ISC",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/KarthikGangadhar/ape-cricket#readme",
   "dependencies": {
-    "request": "latest"
+    "request": "^2.83.0"
   },
   "engines": {
     "node": "6.9.2",

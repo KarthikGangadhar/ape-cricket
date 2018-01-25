@@ -1,10 +1,10 @@
-var httpRequest = require("request");
-apiKey = ""
+const httpRequest = require("request");
+const helper = require("./helper");
+let api_key = ""
 
 exports.schedule = function (api_key, callback) {
     httpRequest.get({
-        url: "http://apecricket.herokuapp.com:80/api/matchCalendar",
-        form:{ apikey: apikey }
+        url: helper.getEndpoint(api_key, "MATCHCALENDER")
     }, function (err, resp, body) {
         callback(body);
     });
@@ -12,8 +12,7 @@ exports.schedule = function (api_key, callback) {
 
 exports.cricket = function (api_key, callback) {
     httpRequest.get({
-        url: "http://apecricket.herokuapp.com:80/api/cricket",
-         form:{ apikey: apikey }
+        url: helper.getEndpoint(api_key, "CRICKET")
     }, function (err, resp, body) {
         callback(body);
     });
@@ -21,8 +20,7 @@ exports.cricket = function (api_key, callback) {
 
 exports.upcomingMatches = function (api_key, callback) {
     httpRequest.get({
-        url: "http://apecricket.herokuapp.com:80/api/matches",
-        form:{ apikey: apikey }        
+        url: helper.getEndpoint(api_key, "MATCHES")
     }, function (err, resp, body) {
         callback(body);
     });
@@ -30,8 +28,10 @@ exports.upcomingMatches = function (api_key, callback) {
 
 exports.cricketScore = function (api_key, unique_id, callback) {
     httpRequest.post({
-        url: "http://apecricket.herokuapp.com:80/api/cricketScore",
-        form: { unique_id: unique_id, apikey: apikey }
+        url: helper.getEndpoint(api_key, "CRICKETSCORE"),
+        form: {
+            unique_id: unique_id,
+        }
     }, function (err, resp, body) {
         callback(body);
     });
@@ -39,8 +39,10 @@ exports.cricketScore = function (api_key, unique_id, callback) {
 
 exports.playerStats = function (api_key, pid, callback) {
     httpRequest.post({
-        url: "http://apecricket.herokuapp.com:80/api/playerStats",
-        form: { pid: pid, apikey: apikey }
+        url: helper.getEndpoint(api_key, "PLAYERSTATS"),
+        form: {
+            pid: pid,
+        }
     }, function (err, resp, body) {
         callback(body);
     });
