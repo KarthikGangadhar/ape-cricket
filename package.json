@@ -1,6 +1,6 @@
 {
   "name": "ape-cricket",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "This is a live cricket api provides data using crickapi.com",
   "main": "server.js",
   "scripts": {
@@ -17,7 +17,9 @@
     "schedule",
     "playerstat",
     "score",
-    "match"
+    "match",
+    "fantasysquard",
+    "fantasysummary"
   ],
   "author": "kgangadhar <karthikg1643@gmail.com> (https://github.com/karthikgangadhar)",
   "license": "ISC",

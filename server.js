@@ -47,3 +47,25 @@ exports.playerStats = function (api_key, pid, callback) {
         callback(body);
     });
 }
+
+exports.fantasySummary = function (api_key, unique_id, callback) {
+    httpRequest.post({
+        url: helper.getEndpoint(api_key, "FANTASYSUMMARY"),
+        form: {
+            unique_id: unique_id,
+        }
+    }, function (err, resp, body) {
+        callback(body);
+    });
+}
+
+exports.fantasySquad = function (api_key, unique_id, callback) {
+    httpRequest.post({
+        url: helper.getEndpoint(api_key, "FANTASYSQUARD"),
+        form: {
+            unique_id: unique_id,
+        }
+    }, function (err, resp, body) {
+        callback(body);
+    });
+}
