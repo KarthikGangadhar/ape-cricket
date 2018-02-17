@@ -6,7 +6,7 @@
                 "MATCHES": "/matches?",
                 "CRICKET": "/cricket?",
                 "MATCHCALENDER": "/matchCalendar?",
-                "FANTASYSUMMARY":"/fantasySummary?",
-                "FANTASYSQUARD":"/fantasySquad?"
+                "FANTASYSUMMARY": "/fantasySummary?",
+                "FANTASYSQUARD": "/fantasySquad?"
         }
 }
