@@ -1,5 +1,6 @@
 # ape-cricket
 
+[![NPM](https://nodei.co/npm/ape-cricket.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ape-cricket/)
 [![npm version](https://badge.fury.io/js/ape-cricket.svg)](http://apecricket.herokuapp.com/documentation#)
 
 The [ape-cricket](http://apecricket.herokuapp.com/documentation#) is a rest-api exported as Node.js module.
