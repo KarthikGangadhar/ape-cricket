@@ -104,7 +104,7 @@ apecricket.fantasySummary(api_key, unique_id, function (response) {
 });
 ```
 
- #### fantasySquad
+#### fantasySquad
  ```js
 //match id
 var unique_id = "1123492"
