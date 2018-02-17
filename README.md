@@ -90,7 +90,7 @@ apecricket.playerStats( api_key, pid , function(response){
 });
 ``` 
 
-Fantasy API are billable since they're designed to help you generate income by running Fantasy Cricket portals. 
+####Fantasy API are billable since they're designed to help you generate income by running Fantasy Cricket portals. 
 Each hit is 1 credit. You get 250 credits free. Deducted from your prepaid account.
 
 #### fantasySummary
