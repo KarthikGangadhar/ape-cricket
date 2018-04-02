@@ -1,32 +1,35 @@
 const httpRequest = require("request");
 const helper = require("./helper");
-let api_key = ""
+let api_key = "";
 
-exports.schedule = function (api_key, callback) {
-    httpRequest.get({
-        url: helper.getEndpoint(api_key, "MATCHCALENDER")
-    }, function (err, resp, body) {
-        callback(body);
+exports.schedule = (api_key, callback) => {
+    let endpoint = helper.getEndpoint(api_key, "MATCHCALENDER");
+    helper.getResponse(endpoint).then((response) => {
+        callback(response)
+    }).catch((err) => {
+        callback(err);
     });
 };
 
-exports.cricket = function (api_key, callback) {
-    httpRequest.get({
-        url: helper.getEndpoint(api_key, "CRICKET")
-    }, function (err, resp, body) {
-        callback(body);
+exports.cricket = (api_key, callback) => {
+    let endpoint = helper.getEndpoint(api_key, "CRICKET");
+    helper.getResponse(endpoint).then((response) => {
+        callback(response)
+    }).catch((err) => {
+        callback(err);
     });
 };
 
-exports.upcomingMatches = function (api_key, callback) {
-    httpRequest.get({
-        url: helper.getEndpoint(api_key, "MATCHES")
-    }, function (err, resp, body) {
-        callback(body);
+exports.upcomingMatches = (api_key, callback) => {
+    let endpoint = helper.getEndpoint(api_key, "MATCHES");
+    helper.getResponse(endpoint).then((response) => {
+        callback(response)
+    }).catch((err) => {
+        callback(err);
     });
 };
 
-exports.cricketScore = function (api_key, unique_id, callback) {
+exports.cricketScore = (api_key, unique_id, callback) => {
     httpRequest.post({
         url: helper.getEndpoint(api_key, "CRICKETSCORE"),
         form: {
@@ -37,7 +40,7 @@ exports.cricketScore = function (api_key, unique_id, callback) {
     });
 }
 
-exports.playerStats = function (api_key, pid, callback) {
+exports.playerStats = (api_key, pid, callback) => {
     httpRequest.post({
         url: helper.getEndpoint(api_key, "PLAYERSTATS"),
         form: {
@@ -48,7 +51,7 @@ exports.playerStats = function (api_key, pid, callback) {
     });
 }
 
-exports.fantasySummary = function (api_key, unique_id, callback) {
+exports.fantasySummary = (api_key, unique_id, callback) => {
     httpRequest.post({
         url: helper.getEndpoint(api_key, "FANTASYSUMMARY"),
         form: {
@@ -59,7 +62,7 @@ exports.fantasySummary = function (api_key, unique_id, callback) {
     });
 }
 
-exports.fantasySquad = function (api_key, unique_id, callback) {
+exports.fantasySquad = (api_key, unique_id, callback) => {
     httpRequest.post({
         url: helper.getEndpoint(api_key, "FANTASYSQUARD"),
         form: {
