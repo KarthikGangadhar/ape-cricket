@@ -4,7 +4,7 @@
   "description": "This is a live cricket api provides data using crickapi.com",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node test.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,9 +27,6 @@
     "url": "https://github.com/KarthikGangadhar/ape-cricket/issues"
   },
   "homepage": "https://github.com/KarthikGangadhar/ape-cricket#readme",
-  "dependencies": {
-    "request": "^2.85.0"
-  },
   "engines": {
     "node": "6.9.2",
     "npm": "3.10.9"

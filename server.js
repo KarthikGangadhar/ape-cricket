@@ -1,4 +1,5 @@
-const httpRequest = require("request");
+'use strict';
+
 const helper = require("./helper");
 let api_key = "";
 
@@ -30,45 +31,41 @@ exports.upcomingMatches = (api_key, callback) => {
 };
 
 exports.cricketScore = (api_key, unique_id, callback) => {
-    httpRequest.post({
-        url: helper.getEndpoint(api_key, "CRICKETSCORE"),
-        form: {
-            unique_id: unique_id,
-        }
-    }, function (err, resp, body) {
-        callback(body);
+    let url = helper.getEndpoint(api_key, "CRICKETSCORE");
+    let body = { 'unique_id': unique_id };
+    helper.postResponse(url, body).then((response) => {
+        callback(response)
+    }).catch((err) => {
+        callback(err);
     });
 }
 
 exports.playerStats = (api_key, pid, callback) => {
-    httpRequest.post({
-        url: helper.getEndpoint(api_key, "PLAYERSTATS"),
-        form: {
-            pid: pid,
-        }
-    }, function (err, resp, body) {
-        callback(body);
+    let url = helper.getEndpoint(api_key, "PLAYERSTATS");
+    let body = { 'pid': pid };
+    helper.postResponse(url, body).then((response) => {
+        callback(response)
+    }).catch((err) => {
+        callback(err);
     });
 }
 
 exports.fantasySummary = (api_key, unique_id, callback) => {
-    httpRequest.post({
-        url: helper.getEndpoint(api_key, "FANTASYSUMMARY"),
-        form: {
-            unique_id: unique_id,
-        }
-    }, function (err, resp, body) {
-        callback(body);
+    let url = helper.getEndpoint(api_key, "FANTASYSUMMARY");
+    let body = { 'unique_id': unique_id };
+    helper.postResponse(url, body).then((response) => {
+        callback(response)
+    }).catch((err) => {
+        callback(err);
     });
 }
 
 exports.fantasySquad = (api_key, unique_id, callback) => {
-    httpRequest.post({
-        url: helper.getEndpoint(api_key, "FANTASYSQUARD"),
-        form: {
-            unique_id: unique_id,
-        }
-    }, function (err, resp, body) {
-        callback(body);
+    let url = helper.getEndpoint(api_key, "FANTASYSQUARD");
+    let body = { 'unique_id': unique_id };
+    helper.postResponse(url, body).then((response) => {
+        callback(response)
+    }).catch((err) => {
+        callback(err);
     });
 }
