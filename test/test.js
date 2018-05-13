@@ -6,6 +6,8 @@
 // Dependencies
 const server = require('../server.js');
 const assert = require('assert');
+const cypher = require('../test/helper');
+const config = require('../constants.json');
 
 // Application logic for the test runner
 _app = {};
@@ -15,12 +17,9 @@ _app.tests = {
     'unit': {}
 };
 
-// Required fields
-const apikey = 'TESTKEY0273';
-
 // Assert that the cricket function is returning a object
 _app.tests.unit['server.cricket should return a object with status 200'] = async (done) => {
-    server.cricket(apikey, response => {
+    server.cricket(cypher.DecryptKey(config.encryption.key), response => {
         response = JSON.parse(response);
         assert.equal(typeof (response), 'object');
         assert.equal(response.message, 'Live cricket score');
@@ -31,7 +30,7 @@ _app.tests.unit['server.cricket should return a object with status 200'] = async
 
 // Assert that the schedule function is returning a object
 _app.tests.unit['server.schedule should return a object with status 200'] = async (done) => {
-    server.schedule(apikey, response => {
+    server.schedule(cypher.DecryptKey(config.encryption.key), response => {
         response = JSON.parse(response);
         assert.equal(typeof (response), 'object');
         assert.equal(response.message, 'upcoming match schedules');
@@ -42,7 +41,7 @@ _app.tests.unit['server.schedule should return a object with status 200'] = asyn
 
 // Assert that the upcomingMatches function is returning a object
 _app.tests.unit['server.upcomingMatches should return a object with status 200'] = async (done) => {
-    server.upcomingMatches(apikey, response => {
+    server.upcomingMatches(cypher.DecryptKey(config.encryption.key), response => {
         response = JSON.parse(response);
         assert.equal(typeof (response), 'object');
         assert.equal(response.message, 'Live cricket score');

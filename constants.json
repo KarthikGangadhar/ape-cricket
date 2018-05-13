@@ -8,5 +8,10 @@
                 "MATCHCALENDER": "/matchCalendar?",
                 "FANTASYSUMMARY": "/fantasySummary?",
                 "FANTASYSQUARD": "/fantasySquad?"
+        },
+        "encryption": {
+                "type": "aes192",
+                "secreteKey": "ape-cricket",
+                "key": "944f7f1189cde81bfee2e71d917286d1d4b8c1bb77e936943744ed512569b76e"
         }
 }
