@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "8.11"
+
+script: npm start
+after_success: npm run test
+
+notifications:
+  email:
+    - karthikg1643@gmail.com
+
+sudo: false
