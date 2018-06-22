@@ -1,9 +1,13 @@
 var apecricket = require("./server");
-//user api_key
+let api_key = ""
 // calling a endpoint to get response.
 var unique_id = "1123492";
 
-// apecricket.cricket(api_key, function (response) {
+apecricket.cricket(api_key, function (response) {
+    console.log(response);
+});
+
+// apecricket.playerFinder(api_key, "sach", function (response) {
 //     console.log(response);
 // });
 

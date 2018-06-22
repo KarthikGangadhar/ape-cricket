@@ -69,3 +69,13 @@ exports.fantasySquad = (api_key, unique_id, callback) => {
         callback(err);
     });
 }
+
+exports.playerFinder = (api_key, name, callback) => {
+    let url = helper.getEndpoint(api_key, "PLAYERFINDER");
+    let body = { 'name': name };
+    helper.postResponse(url, body).then((response) => {
+        callback(response)
+    }).catch((err) => {
+        callback(err);
+    });
+}

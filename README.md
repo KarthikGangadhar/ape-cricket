@@ -14,6 +14,7 @@ The ape-cricket uses [cricapi](http://www.cricapi.com/), Free to use, super-high
  * apecricket.upcomingMatches( ) provides upcoming match fixtures 
  * apecricket.cricketScore( ) provides detailed score card of the match
  * apecricket.playerStats( ) provides players carrer info and stats
+ * apecricket.playerFinder( ) provides players ids matching given name string
  * apecricket.fantasySummary( ) provides match info and stats
  * apecricket.fantasySquad( ) provides team players info
  
@@ -87,6 +88,18 @@ var pid = 35320;
 // calling a endpoint to get response.
 apecricket.playerStats( api_key, pid , function(response){ 
     // response will be json data of mentioned player
+});
+``` 
+
+#### playerfinder
+ ```js
+//user api_key
+var api_key = "TESTKEY0273"
+// player id
+var name = "sach";
+// calling a endpoint to get response.
+apecricket.playerStats( api_key, name , function(response){ 
+    // response will be json data of matching player ids
 });
 ``` 
 

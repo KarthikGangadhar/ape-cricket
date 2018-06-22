@@ -19,7 +19,8 @@
     "score",
     "match",
     "fantasysquard",
-    "fantasysummary"
+    "fantasysummary",
+    "playerfinder"
   ],
   "author": "kgangadhar <karthikg1643@gmail.com> (https://github.com/karthikgangadhar)",
   "license": "ISC",
