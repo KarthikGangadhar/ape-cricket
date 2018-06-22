@@ -98,7 +98,7 @@ var api_key = "TESTKEY0273"
 // player id
 var name = "sach";
 // calling a endpoint to get response.
-apecricket.playerStats( api_key, name , function(response){ 
+apecricket.playerFinder( api_key, name , function(response){ 
     // response will be json data of matching player ids
 });
 ``` 
