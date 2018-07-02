@@ -7,6 +7,10 @@ apecricket.cricket(api_key, function (response) {
     console.log(response);
 });
 
+apecricket.news(api_key, function (response) {
+    console.log(response);
+});
+
 // apecricket.playerFinder(api_key, "sach", function (response) {
 //     console.log(response);
 // });

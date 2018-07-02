@@ -21,6 +21,15 @@ exports.cricket = (api_key, callback) => {
     });
 };
 
+exports.news = (api_key, callback) => {
+    let endpoint = helper.getEndpoint(api_key, "NEWS");
+    helper.getResponse(endpoint).then((response) => {
+        callback(response)
+    }).catch((err) => {
+        callback(err);
+    });
+};
+
 exports.upcomingMatches = (api_key, callback) => {
     let endpoint = helper.getEndpoint(api_key, "MATCHES");
     helper.getResponse(endpoint).then((response) => {

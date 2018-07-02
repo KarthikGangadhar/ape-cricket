@@ -11,6 +11,7 @@ The ape-cricket uses [cricapi](http://www.cricapi.com/), Free to use, super-high
 
  * apecricket.schedule( ) provides international fixtures
  * apecricket.cricket( ) provides live scrores  of ongoing match 
+ * apecricket.news( ) provides updated cricket news  
  * apecricket.upcomingMatches( ) provides upcoming match fixtures 
  * apecricket.cricketScore( ) provides detailed score card of the match
  * apecricket.playerStats( ) provides players carrer info and stats
@@ -50,6 +51,16 @@ apecricket.schedule( api_key, function(response){
 var api_key = "TESTKEY0273"
 // calling a endpoint to get response.
 apecricket.cricket( api_key, function(response){ 
+    // response will be json data of upcoming cricket matches
+});
+```
+
+#### news
+```js
+//user api_key
+var api_key = "TESTKEY0273"
+// calling a endpoint to get response.
+apecricket.news( api_key, function(response){ 
     // response will be json data of upcoming cricket matches
 });
 ```

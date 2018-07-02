@@ -8,7 +8,8 @@
                 "MATCHCALENDER": "/matchCalendar?",
                 "FANTASYSUMMARY": "/fantasySummary?",
                 "FANTASYSQUARD": "/fantasySquad?",
-                "PLAYERFINDER": "/playerFinder?"
+                "PLAYERFINDER": "/playerFinder?",
+                "NEWS": "/news?"
         },
         "encryption": {
                 "type": "aes192",
