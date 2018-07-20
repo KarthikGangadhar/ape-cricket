@@ -1,6 +1,6 @@
 {
   "name": "ape-cricket",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "This is a live cricket api provides data using crickapi.com",
   "main": "server.js",
   "scripts": {
