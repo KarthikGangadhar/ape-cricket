@@ -1,5 +1,5 @@
 /*
- *Request- helper class to perform https calls to stackexchange api 
+ *Request- helper class to perform https calls to cricapi 
  */
 
 // Dependencies
