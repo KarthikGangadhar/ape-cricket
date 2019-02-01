@@ -1,7 +1,6 @@
 'use strict';
 
 const helper = require("./helper");
-let api_key = "";
 
 exports.schedule = (api_key, callback) => {
     let endpoint = helper.getEndpoint(api_key, "MATCHCALENDER");
