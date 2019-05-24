@@ -80,7 +80,7 @@ apecricket.upcomingMatches( api_key, function(response){
 });
 ```
 
-The endpoints cricketScore() and playerStats() require a string input field "unique_id" and "pid"(player_id). "unique_id" for each match is available from the cricket() endpoint response. and for "pid"(player_id) need to visit [cricapi players page](http://www.cricapi.com/players/). usage is as follows:
+The endpoints `cricketScore()` and `playerStats()` require a string input field `"unique_id"` and `"pid"(player_id)`. `"unique_id"` for each match is available from the `cricket()` endpoint response. and for `"pid"(player_id)` need to visit [cricapi players page](http://www.cricapi.com/players/). usage is as follows:
 
 
 #### cricketScore
