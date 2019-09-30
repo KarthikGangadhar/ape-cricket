@@ -23,6 +23,7 @@
     "fantasysummary",
     "playerfinder"
   ],
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "author": "kgangadhar <karthikg1643@gmail.com> (https://github.com/karthikgangadhar)",
   "license": "ISC",
   "bugs": {
